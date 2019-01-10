@@ -1,4 +1,2 @@
-console.log('ok')
-
-class Test { }
-export default Test
+class Test {}
+export default Test;
