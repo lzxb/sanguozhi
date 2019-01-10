@@ -1,4 +1,7 @@
-export default class Person {
+import City from './city';
+
+export default interface Person {
+    id: number;
     // 姓名
     name: string;
     // 年龄
@@ -13,13 +16,8 @@ export default class Person {
     leadTroops: number;
     // 野心
     ambition: number;
-    public constructor(data: Person) {
-        this.name = data.name;
-        this.age = data.age;
-        this.force = data.force;
-        this.politics = data.politics;
-        this.charm = data.charm;
-        this.leadTroops = data.leadTroops;
-        this.ambition = data.ambition;
-    }
+    // 所在城市
+    city: City;
+    // 是否可见
+    visible: boolean;
 }
